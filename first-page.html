@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+   
+    <title>video</title>
+    </head>
+
+    <style>
+        video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-height: 100%;
+            min-width: 100%;
+        }
+        .content {
+            position: fixed;
+            color: ActiveBorder;
+            width: 100%;
+            padding: 20px;
+            left: 0;
+            bottom: 40%;
+            background-color: rgba(0, 0, 0, 0.5)
+        }
+        button{
+            width:200px;
+            font-size:large;
+            padding:10px;
+            border:none;
+            background:#000;
+            color:white;
+            cursor:pointer;
+            margin-top:60%;
+        }
+        .center {
+            text-align: center;
+            align-content: center;
+        }
+        #myP {
+            width: 200px;
+            font-size: large;
+            padding: 10px;
+            border: none;
+            background:rgba(0, 0, 0, 0.5);
+            color:white;
+            cursor: pointer;
+        }
+            #myP:hover {
+                background:white ;
+                color:black;
+            }
+    </style>
+    <body>
+        <video autoplay muted loop>
+            <source src="video3.mp4" type="video/mp4" />
+        </video>
+        <div class="content">
+
+            <h1 style="text-align:center; font-family:Pristina;color:antiquewhite;font-size:50px">Welcome!</h1>
+            <p style="text-align:center; font-size:18px; font-family:Papyrus">
+                We bring you a collection that celebrates the feeling
+                of being free.<br />Our Summer ’21 collection is all about encapsulating the joy of being out & about,
+                feeling the warm breeze, catching up with loved ones & making memories!<br />
+                Create the best memories with the best ones!
+            </p>
+        </div>
+        <div class="content" style="background-color:transparent;bottom:25%">
+            <div class="center">
+                <button onclick="document.location = 'project.html'" id="myP" ><span onmouseover="this.style.color = 'black'" ; 
+                  onmouseout="this.style.color ='red'"> Shop now!</span></button>
+              
+            </div>
+        </div>
+        
+    </body>
+</html>
